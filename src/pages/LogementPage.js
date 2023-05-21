@@ -3,8 +3,11 @@ import { useParams } from 'react-router-dom';
 import Header from '../components/header';
 import Collapse from '../components/collapse';
 import logements from '../annonces.json';
+import RatingCal from "../components/rating";
+
 import Error from './error';
 import '../styles/viewone.css';
+
 
 function Logement(){
     const { id } = useParams()
@@ -35,11 +38,7 @@ function Logement(){
                             <img src={logement.host.picture} alt="host picture" className="logement-owner_badge"/>
                         </div>
                         <div className="logement-owner_stars">
-                            <span className="on">☆</span>
-                            <span className="on">☆</span>
-                            <span className="on">☆</span>
-                            <span className="off">☆</span>
-                            <span className="off">☆</span>
+                            <RatingCal value={logement.rating} />
                         </div>
 
                     </div>
