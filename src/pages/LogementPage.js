@@ -31,8 +31,8 @@ function Logement(){
                     </div>
                     <div className="logement-page_owner">
                         <div className="owner_details">
-                            <h3>Alexandre Dumas</h3>
-                            <div className="logement-owner_badge"></div>
+                            <h3>{logement.host.name}</h3>
+                            <img src={logement.host.picture} alt="host picture" className="logement-owner_badge"/>
                         </div>
                         <div className="logement-owner_stars">
                             <span className="on">☆</span>
