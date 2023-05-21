@@ -55,10 +55,9 @@ function Logement(){
             <div className="logement-page_description">
                 <div className="logement-page_description_content">
 					<Collapse title="Équipements" content={logement.equipments.map((equipment, i) => (
-                        <ul>
-                            <li>{equipment}</li>
-                        </ul>
-                    ))} />
+                        <span>{equipment}</span>
+                        ))} 
+                    />
 				</div>
             </div>
 
