@@ -85,6 +85,11 @@ h2{
     flex: 1 0 auto;
     max-width: 50%
 }
+.logement-page_description_content ul{
+  margin: 0;
+  padding: 0;
+}
+
 .logement-page_description_content li{
     list-style: none;
     margin: 0 2px 0 0;

@@ -16,7 +16,7 @@ function Collapse({title, content}) {
                 <div className={toggle ? 'collapse_contenu' : 'collapse_contenu_cache'}>
                     {Array.isArray(content) ? content.map((item, index) => {
                         return (
-                            <p key={index}>{item}</p>
+                            <ul key={index}>{item}</ul>
                         )
                     }) : content
                     }
