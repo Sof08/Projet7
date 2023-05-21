@@ -14,57 +14,50 @@ function Logement(){
     }
     return(
       <div>
-        <Header />
-      
-        <div className="logement-page">
-            <div>
-                <img src="https://picsum.photos/800/400" className="img_log" alt="" />
-            </div>
-            <div className="logement-page_header">
-                <div className="logement-page_title">
-                    <h1>{logement.title}</h1>
-                    <h2>{logement.location}</h2>
-                    <div className="logement_tags">
-                        {logement.tags.map((tag, i) => (
-                            <span>{tag}</span>
-                        ))}
+            <Header />
+            <div className="logement-page">
+                <div>
+                    <img src="https://picsum.photos/800/400" className="img_log" alt="" />
+                </div>
+                <div className="logement-page_header">
+                    <div className="logement-page_title">
+                        <h1>{logement.title}</h1>
+                        <h2>{logement.location}</h2>
+                        <div className="logement_tags">
+                            {logement.tags.map((tag, i) => (
+                                <span>{tag}</span>
+                            ))}
+                        </div>
+                    </div>
+                    <div className="logement-page_owner">
+                        <div className="owner_details">
+                            <h3>Alexandre Dumas</h3>
+                            <div className="logement-owner_badge"></div>
+                        </div>
+                        <div className="logement-owner_stars">
+                            <span className="on">☆</span>
+                            <span className="on">☆</span>
+                            <span className="on">☆</span>
+                            <span className="off">☆</span>
+                            <span className="off">☆</span>
+                        </div>
+
                     </div>
                 </div>
-                <div className="logement-page_owner">
-                    <div className="owner_details">
-                        <h3>Alexandre Dumas</h3>
-                        <div className="logement-owner_badge"></div>
-                    </div>
-                    <div className="logement-owner_stars">
-                        <span className="on">☆</span>
-                        <span className="on">☆</span>
-                        <span className="on">☆</span>
-                        <span className="off">☆</span>
-                        <span className="off">☆</span>
-                    </div>
-
+                <div className="logement-page_description_section">
+                        <div className="logement-page_description_content">
+                            <Collapse title="Description" content={logement.description} />
+                        </div>
+                    
+                        <div className="logement-page_description_content">
+                            <Collapse title="Équipements" content={logement.equipments.map((equipment, i) => (
+                                <ul key={i}>
+                                    <li>{equipment}</li>
+                                </ul>
+                            
+                            ))} />
+                        </div>
                 </div>
-            </div>
-
-            <div className="logement-page_description">
-                <div className="logement-page_description_content">
-					<Collapse title="Description" content={logement.description} />
-				</div>
-            </div>
-            
-            <div className="logement-page_description">
-                <div className="logement-page_description_content">
-					<Collapse title="Équipements" content={logement.equipments.map((equipment, i) => (
-                        <span>{equipment}</span>
-                        ))} 
-                    />
-				</div>
-            </div>
-
-
-
-            
-
             </div>         
         </div>
     );

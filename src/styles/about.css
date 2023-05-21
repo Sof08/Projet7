@@ -16,7 +16,7 @@
     background-color: #f7f7f7;
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    /*gap: 5px;*/
     letter-spacing: 1px;
     visibility: visible;
     opacity: 1;
