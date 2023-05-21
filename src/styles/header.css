@@ -1,8 +1,9 @@
 .navbar{
+    align-items: center;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin: 3%;
+    padding: 30px 35px 10px;
+    
 }
 
 .list-inline {

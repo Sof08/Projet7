@@ -1,10 +1,10 @@
 import '../styles/BannerAbout.css'
 
-function Banner() {
+function BannerAbout() {
     return (
-        <div className='banner'></div>
+        <div className='bannerAbout'></div>
     )
 }
 
-export default Banner
+export default BannerAbout
 
