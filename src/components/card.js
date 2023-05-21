@@ -3,7 +3,7 @@ function Card({ id, cover, title }) {
 	return (
 	
         <li key={id} className='logement'>
-           <a href={'/logement/'}>
+           <a href={'/logement/' + id}>
                 <div className='logement_title_div'>
                     <img src={cover} alt={title}  className='logement_img'/>
                     <div className='logement_div_effect'></div>

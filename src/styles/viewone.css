@@ -19,8 +19,7 @@
 }
 .logement-owner_stars{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-end;
     font-size: 1.5rem;
 }
 .on{
@@ -66,7 +65,7 @@ h2{
 .logement_tags{
     display: grid;
     gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 100px));
+    grid-template-columns: repeat(auto-fit, minmax(100px, 150px));
 }
 .logement_tags span{
     background-color: #ff6060;
@@ -74,4 +73,8 @@ h2{
     padding: 0.3em 1em;
     border-radius: 0.7rem;
     text-align: center;
+}
+.logement-page_description_content li{
+    list-style: none;
+    margin: 0 2px 0 0;
 }

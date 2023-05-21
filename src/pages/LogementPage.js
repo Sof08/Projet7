@@ -1,8 +1,17 @@
 import React from "react";
+import { useParams } from 'react-router-dom';
 import Header from '../components/header';
+import Collapse from '../components/collapse';
+import logements from '../annonces.json';
+import Error from './error';
 import '../styles/viewone.css';
 
 function Logement(){
+    const { id } = useParams()
+    const logement = logements.find(logement => logement.id === id)
+    if (logement === undefined) { 
+        return <Error />
+    }
     return(
       <div>
         <Header />
@@ -13,12 +22,12 @@ function Logement(){
             </div>
             <div className="logement-page_header">
                 <div className="logement-page_title">
-                    <h1>Cozy Loft</h1>
-                    <h2>Paris</h2>
+                    <h1>{logement.title}</h1>
+                    <h2>{logement.location}</h2>
                     <div className="logement_tags">
-                        <span>Cozy</span>
-                        <span>Canal</span>
-                        <span>Paris 10</span>
+                        {logement.tags.map((tag, i) => (
+                            <span>{tag}</span>
+                        ))}
                     </div>
                 </div>
                 <div className="logement-page_owner">
@@ -38,13 +47,19 @@ function Logement(){
             </div>
 
             <div className="logement-page_description">
-                <p>description</p>
-                <p>paragraph</p>
+                <div className="logement-page_description_content">
+					<Collapse title="Description" content={logement.description} />
+				</div>
             </div>
+            
             <div className="logement-page_description">
-                <p>description</p>
-                <p>paragraph</p>
-
+                <div className="logement-page_description_content">
+					<Collapse title="Équipements" content={logement.equipments.map((equipment, i) => (
+                        <ul>
+                            <li>{equipment}</li>
+                        </ul>
+                    ))} />
+				</div>
             </div>
 
 
