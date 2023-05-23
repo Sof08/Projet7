@@ -2,6 +2,7 @@ import React from "react";
 import { useParams } from 'react-router-dom';
 import Header from '../components/header';
 import Collapse from '../components/collapse';
+import Carousel from "../components/carousel"
 import logements from '../annonces.json';
 import RatingCal from "../components/rating";
 
@@ -20,7 +21,7 @@ function Logement(){
             <Header />
             <div className="logement-page">
                 <div>
-                    <img src="https://picsum.photos/800/400" className="img_log" alt="" />
+                    <Carousel images={logement.pictures} />
                 </div>
                 <div className="logement-page_header">
                     <div className="logement-page_title">
@@ -35,7 +36,7 @@ function Logement(){
                     <div className="logement-page_owner">
                         <div className="owner_details">
                             <h3>{logement.host.name}</h3>
-                            <img src={logement.host.picture} alt="host picture" className="logement-owner_badge"/>
+                            <img src={logement.host.picture} alt="host_img" className="logement-owner_badge"/>
                         </div>
                         <div className="logement-owner_stars">
                             <RatingCal value={logement.rating} />
