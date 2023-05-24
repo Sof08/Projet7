@@ -1,6 +1,7 @@
 import React from "react";
 import { useParams } from 'react-router-dom';
 import Header from '../components/header';
+import Footer from '../components/Footer'
 import Collapse from '../components/collapse';
 import Carousel from "../components/carousel"
 import logements from '../annonces.json';
@@ -17,7 +18,7 @@ function Logement(){
         return <Error />
     }
     return(
-      <div>
+        <div>
             <Header />
             <div className="logement-page">
                 <div>
@@ -56,7 +57,9 @@ function Logement(){
                             ))} />
                         </div>
                 </div>
-            </div>         
+            </div>   
+			<Footer />
+
         </div>
     );
 }

@@ -63,7 +63,7 @@ h2{
     color: #ff6060;
 }
 .logement_tags{
-    display: grid;
+    display: flex;
     gap: 1rem;
     grid-template-columns: repeat(auto-fit, minmax(100px, 150px));
 }
@@ -93,4 +93,49 @@ h2{
 .logement-page_description_content li{
     list-style: none;
     margin: 0 2px 0 0;
+}
+
+@media screen and (max-width: 650px){
+
+    .logement-page_header{
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 0 28px;
+        width: 335px;
+    }
+   
+    .logement-page_title h1{
+        font-size: 18px;
+    }
+    .logement-page_title h2{
+        font-size: 14px;
+    }
+    .logement_tags {
+        margin: 10px 0;
+        display: inline-flex;
+    }
+    .logement_tags span{
+        font-size: 10px;
+    }
+    .logement-page_owner {
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .owner_details h3{
+        font-size: 12px;
+    }
+    .logement-page_description_section{
+        flex-direction: column;
+        gap: 0px;
+    }
+    .collapse_title {
+        padding: 8px 15px;
+    }
+    .collapse_div {
+        padding: 0 28px;
+        width: 335px;
+    }
 }

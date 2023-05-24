@@ -52,5 +52,16 @@
 .active {
     opacity: 1;
 }
-  
- 
+
+@media screen and (max-width: 650px){
+
+    .carousel{
+        height: 255px;
+        width: 335px;
+        left: 0px;
+        top: 0px;
+        border-radius: 10px;
+        margin: 0 auto;
+    }
+
+}
