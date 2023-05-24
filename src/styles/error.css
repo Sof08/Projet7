@@ -28,3 +28,32 @@
     margin-bottom: 112px;
     text-decoration: underline;
 }
+
+@media screen and (max-width: 650px){
+
+    .errorDiv {
+        padding: 0 28px;
+        gap: 33px;
+    }
+     .errorLink {
+        font-size: 14px;
+    }
+    .errorTitle {
+           
+        margin-top: 60px;
+        font-size: 150px;
+        justify-content: center;
+    }
+    .errorText {
+        font-size: 16px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 142.6%;
+        display: flex;
+        align-items: flex-end;
+        text-align: center;
+    }
+
+}
