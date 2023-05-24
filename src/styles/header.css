@@ -38,3 +38,18 @@
     text-decoration: none;
     color: #FF6060;
 }
+@media screen and (max-width: 650px){
+    .logo_nav{
+        padding-right: 1rem;
+        height: 47px;
+        width: 145px;
+    }
+  
+    .accueilpage {
+        padding-right: 1rem;
+        
+    }
+    .list-inline a{
+        font-size: 12px;
+    }
+}

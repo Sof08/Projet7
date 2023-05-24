@@ -4,7 +4,7 @@ function Banner() {
     const texte = 'Chez vous, partout et ailleurs'
     return (
         <div className='banner'>
-            <span className="text-banner">{texte}</span>
+            <span className="text-banner_">{texte}</span>
         </div>
     )
 }

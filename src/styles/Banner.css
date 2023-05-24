@@ -27,11 +27,26 @@
 }
   
 
-.text-banner {
+.text-banner_{
     color: #ffffff;
     font-size: 48px;
     position: absolute;
     font-family: 'Montserrat';
     z-index: 1;
     text-align: center;
+}
+
+@media screen and (max-width: 650px){
+    .banner{
+        height: 111px;
+        width: 349px;
+        left: 20px;
+        font-size: 10px;
+    }
+    .text-banner_{
+        padding: 15px;
+        font-size: 1.5rem;
+        line-height: 126%;
+        text-align: start;
+    }
 }

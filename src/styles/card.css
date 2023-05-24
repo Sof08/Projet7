@@ -59,3 +59,15 @@ a {
     margin-right: 20px;
 }
 
+@media screen and (max-width: 650px){
+    .list_logement, .section_logement{
+        background-color: #fff;
+    }
+  
+    .list_logement li{
+        width: 100%;
+    }
+    .logement_title_div{
+        width: 344px;
+    }
+}

@@ -11,8 +11,8 @@ function Header (){
                 </div>
                 <div className="navlink">
                     <ul className="list-inline">
-                        <li><a href="/">Accueil</a></li>
-                        <li><a href="/about">A Propos</a></li>
+                        <li className='accueilpage'><a href="/">Accueil</a></li>
+                        <li className='apropospage'><a href="/about">A Propos</a></li>
                     </ul>
                 </div>
             </nav>
