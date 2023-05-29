@@ -46,16 +46,15 @@ function Logement(){
                     </div>
                 </div>
                 <div className="logement-page_description_section">
-                        <div className="logement-page_description_content">
-                            <Collapse title="Description" content={logement.description} />
-                        </div>
-                    
-                        <div className="logement-page_description_content">
-                            <Collapse title="Équipements" content={logement.equipments.map((equipment, i) => (
-                                    <li key={i}>{equipment}</li>
-                            
-                            ))} />
-                        </div>
+                    <div className="logement-page_description_content">
+                        <Collapse title="Description" content={logement.description} />
+                    </div>
+                
+                    <div className="logement-page_description_content">
+                        <Collapse title="Équipements" content={logement.equipments.map((equipment, i) => (
+                                <li key={i}>{equipment}</li>
+                        ))} />
+                    </div>
                 </div>
             </div>   
 			<Footer />

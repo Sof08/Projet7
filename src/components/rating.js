@@ -2,8 +2,9 @@
 import React from 'react';
 import emptyStar from '../assets/emptystar.png';
 import fullStar from '../assets/fullstar.png';
-function RatingCal(props){
-    const value = props.value
+function RatingCal(rating){
+    //valeur de rating logement
+    const value = rating.value
     const array = [1, 2, 3, 4, 5];
     return (
     <div className="logement-owner_content">

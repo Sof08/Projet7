@@ -31,13 +31,13 @@ export default function About() {
 	return (
 		<div>
 			<Header />
-            <Banner />
+            <Banner key="12" />
 			<div className='about_main'>
-				{DataAbout.map(data => {
+				{DataAbout.map((data,i) => {
 					return (
-						<div className="about_main_div">
-							<Collapse title={data.title} content={data.content} />
-						</div>
+						
+							<Collapse key={i} title={data.title} content={data.content} />
+						
 					)}
 				)}
 			</div>

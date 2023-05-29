@@ -8,10 +8,11 @@ function Collapse({title, content}) {
 
     return (
         <>
+        <div className="about_main_div">
             <div className="collapse_div">
                 <h3 className='collapse_title' onClick={() => setToggle(!toggle)} >
                     {title}
-                    <img className={toggle ? 'arrow arrow_up' : 'arrow arrow_down'} src={arrow} alt="Afficher" />
+                    <img className={toggle ? 'arrow_up' : 'arrow_down'} src={arrow} alt="Afficher" />
                 </h3>
                 <div className={toggle ? 'collapse_contenu' : 'collapse_contenu_cache'}>
                     {Array.isArray(content) ? content.map((item, index) => {
@@ -21,6 +22,7 @@ function Collapse({title, content}) {
                     }) : content
                     }
                 </div> 
+            </div>
             </div>
         </>
     )

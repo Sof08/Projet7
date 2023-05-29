@@ -28,7 +28,7 @@ a {
     height: 100%;
     width: 100%;
     position: relative;
-    width: 335px;
+    /*width: 335px;*/
     height: 255px;
     border-radius: 10px;
 }
@@ -68,6 +68,6 @@ a {
         width: 100%;
     }
     .logement_title_div{
-        width: 344px;
+        
     }
 }

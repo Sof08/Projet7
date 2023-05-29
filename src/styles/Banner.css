@@ -39,7 +39,23 @@
 @media screen and (max-width: 650px){
     .banner{
         height: 111px;
-        width: 349px;
+        width: 87%;
+        /* left: 20px; */
+        /* MARGIN: auto; */
+        font-size: 10px;
+        margin: 2px auto 9px;
+    }
+    .text-banner_{
+        padding: 15px;
+        font-size: 1.5rem;
+        line-height: 126%;
+        text-align: start;
+    }
+}
+@media screen and (min-device-width: 651px) and (max-device-width: 1150px){
+    .banner{
+        height: 111px;
+        width: 90%;
         left: 20px;
         font-size: 10px;
     }
