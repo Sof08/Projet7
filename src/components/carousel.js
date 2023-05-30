@@ -4,9 +4,9 @@ import right from '../assets/right.png';
 import left from '../assets/left.png';
 
 function Carousel({ images }) {
-  //Créer un Hook d'état 
+  //Créer un Hook d'état initialiser le current
   const [current, setCurrent] = useState(0); 
-  //la taille du tableau images
+  //On definie la taille du tableau images
   const length = images.length; 
   //verficaion du tableau images 
   if (!Array.isArray(images) || images.length <= 0) {

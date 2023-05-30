@@ -25,6 +25,7 @@
     top: 0%;
     bottom: 0%;
     mix-blend-mode: normal;
+    width: 100%;
 }
 .fleche{
     position: absolute;

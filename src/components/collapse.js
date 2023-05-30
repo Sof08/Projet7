@@ -3,7 +3,7 @@ import arrow from '../assets/Vector.png';
 import { useState } from 'react';
 
 function Collapse({title, content}) {
-
+//
     const [toggle, setToggle] = useState(false);
 
     return (
@@ -23,8 +23,8 @@ function Collapse({title, content}) {
                     }
                 </div> 
             </div>
-            </div>
-        </>
+        </div>
+    </>
     )
 }
 export default Collapse;

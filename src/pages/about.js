@@ -1,7 +1,8 @@
 import '../styles/about.css';
 import Header from "../components/header";
 import Collapse from '../components/collapse';
-import Banner from '../components/bannerAbout';
+import Banner from '../components/banner';
+import image from '../assets/about.png';
 import Footer from '../components/Footer';
 
 export default function About() {
@@ -31,7 +32,7 @@ export default function About() {
 	return (
 		<div>
 			<Header />
-            <Banner key="12" />
+			<Banner image={image} />
 			<div className='about_main'>
 				{DataAbout.map((data,i) => {
 					return (
