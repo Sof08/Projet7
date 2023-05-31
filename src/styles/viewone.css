@@ -95,6 +95,10 @@ h2{
 
 @media screen and (max-width: 650px){
 
+    .logement-page_description_content{
+        flex: 1 0 auto;
+        max-width: 100%
+    }
     .logement-page_header{
         align-items: flex-start;
         flex-direction: column;
@@ -136,4 +140,5 @@ h2{
         padding: 0 28px;
     
     }
+    
 }
